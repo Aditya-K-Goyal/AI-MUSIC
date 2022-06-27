@@ -37,14 +37,14 @@ function draw()
     image(video,0,0,600,500);
     stroke("#ff2455");
     fill("#ff2455");
-    peterpan_song = song_1.isPlaying();
+    peterpan_song = song_2.isPlaying();
     console.log(peterpan_song);
     if(scoreLeftWristY > 0.2)
     {
         circle(leftWristX,leftWristY,20);
-        song_2.stop();
+        song_1.stop();
         if(peterpan_song == false){
-            song_1.play();
+            song_2.play();
         }
         else{
             document.getElementById("song_name").innerHTML ="Song Name :Peter Pan Song";
